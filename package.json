@@ -1,0 +1,23 @@
+{
+  "name": "5app-challenge",
+  "version": "1.0.0",
+  "description": "5app coding challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/joewarrenmeeks/5app-challenge.git"
+  },
+  "author": "Joe Warren-Meeks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joewarrenmeeks/5app-challenge/issues"
+  },
+  "homepage": "https://github.com/joewarrenmeeks/5app-challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
