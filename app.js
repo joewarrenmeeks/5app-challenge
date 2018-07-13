@@ -31,7 +31,7 @@ app.post('/api/users', function (req, res) {
 
 		/*
 		 * So I know of a PHP library that can parse image 
-		 * URL formats, but mu google-fu fails for JS.
+		 * URL formats, but my google-fu fails for JS.
 		 * Hence this more procedural function
 		 */
 		element.logos.forEach(function (logos) {
@@ -43,7 +43,7 @@ app.post('/api/users', function (req, res) {
 			 * This is assuming that the x and y are the 
 			 * same. Once we match one we can quit.
 			 */
-			if ( x[0] >= 64 && x[0] <= 128) { 
+			if ( x[0] >= 64 && x[0] <= 128 ) { 
 				entry.thumbnail = logos.url;
 				return;
 			}
@@ -55,7 +55,7 @@ app.post('/api/users', function (req, res) {
 		 * Probably not. Let's log it to the console
 		 * and hope someone in DevOps monitors the logs
 		 */
-		if ( ! entry.thumbnail) {
+		if ( ! entry.thumbnail ) {
 			console.log('Broken: ', entry);
 		} else {
 			// Add our entry to the reply
